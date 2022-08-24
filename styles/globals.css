@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: rgb(19, 18, 18);
+  color: white;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@layer components {
+  .btn-white {
+    @apply cursor-pointer shadow-sm py-3 px-9 bg-gray-100 text-black font-medium rounded-full hover:shadow-md hover:bg-gray-100 focus:outline-none;
+  }
+  .btn-brown {
+    @apply cursor-pointer py-3 px-9 bg-[#e25625] text-white font-medium rounded-full hover:shadow-md hover:bg-[#e1313d] focus:outline-none;
+  }
+
+  .nav-list {
+    @apply gap-4 hover:text-[#e25625] text-lg cursor-pointer;
+  }
+}
