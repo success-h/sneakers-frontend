@@ -6,8 +6,8 @@ const Navbar = () => {
   const genericHamburgerLine = `h-[3px] w-7 my-1 rounded-full bg-white transition ease transform duration-200`;
 
   return (
-    <nav className="flex z-50 sticky top-0 bg-transparent backdrop-blur-sm py-4 px-4 md:px-0 md:py-4 justify-between md:justify-between items-center">
-      <div className="text-3xl text-[#e25625]">
+    <nav className="flex z-50 sticky top-0 bg-transparent backdrop-blur-smpx-4 md:px-0 md:py-4 justify-between md:justify-between items-center">
+      <div className="text-3xl text-[#e25625] py-4">
         <h3 className="cursor-pointer">Sneakers</h3>
       </div>
       <div className="list-none hidden md:flex gap-6 my-auto">
@@ -15,13 +15,11 @@ const Navbar = () => {
           Home
         </li>
         <li className="nav-list transition ease transform duration-300">
-          Shop
+          Explore
         </li>
+        <li className="nav-list transition ease transform duration-300">Men</li>
         <li className="nav-list transition ease transform duration-300">
-          About Us
-        </li>
-        <li className="nav-list transition ease transform duration-300">
-          Contact
+          Women
         </li>
       </div>
 
@@ -42,13 +40,13 @@ const Navbar = () => {
               Home
             </li>
             <li onClick={() => setIsOpen(!isOpen)} className="nav-list">
-              Menu
+              Explore
             </li>
             <li onClick={() => setIsOpen(!isOpen)} className="nav-list">
-              About Us
+              Men
             </li>
             <li onClick={() => setIsOpen(!isOpen)} className="nav-list">
-              Contact
+              Women
             </li>
           </div>
 

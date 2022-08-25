@@ -8,6 +8,11 @@ module.exports = {
       scale: {
         flip: "-1",
       },
+      fontFamily: {
+        sans: ["Open Sans", "sans-serif"],
+        ubuntu: ["Ubuntu", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
+      },
     },
   },
   plugins: [],
