@@ -6,7 +6,7 @@ const Navbar = () => {
   const genericHamburgerLine = `h-[3px] w-7 my-1 rounded-full bg-white transition ease transform duration-200`;
 
   return (
-    <nav className="flex z-50 sticky top-0 bg-transparent backdrop-blur-smpx-4 md:px-0 md:py-4 justify-between md:justify-between items-center">
+    <nav className="flex z-50 sticky top-0 bg-transparent backdrop-blur-md px-4 md:px-0 md:py-4 justify-between md:justify-between items-center">
       <div className="text-3xl text-[#e25625] py-4">
         <h3 className="cursor-pointer">Sneakers</h3>
       </div>

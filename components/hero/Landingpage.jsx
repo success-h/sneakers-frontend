@@ -1,6 +1,7 @@
 import { useMotionValue, motion, useTransform } from "framer-motion";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
 
 const Landingpage = () => {
   const x = useMotionValue(0);
@@ -8,14 +9,20 @@ const Landingpage = () => {
   const rotateX = useTransform(y, [-100, 100], [30, -30]);
   const rotateY = useTransform(x, [-100, 100], [-30, 30]);
 
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+    AOS.refresh();
+  }, []);
+
   return (
     <div className="px-4 w-full pt-40 md:pt-0 h-screen justify-center flex items-start md:items-center md:px-0">
       <div
-        className="px-4 lg:px-0"
+        className="lg:px-0"
         style={{
           perspective: 2000,
           width: "100%",
         }}
+        data-aos="zoom-in"
       >
         <div className="">
           <h1 className="text-end mb-10 text-sm font-ubuntu sm:text-2xl">
